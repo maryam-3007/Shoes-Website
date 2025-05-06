@@ -1,136 +1,175 @@
-@media (max-width: 768px){
-body{
-    font-family: 'Times New Roman', Times, serif;
-    margin:0;
-    scroll-behavior: smooth;
-    background-image: url(gym-composition-with-sport-elements.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    scroll-behavior: smooth;
-    background-attachment: fixed;
-    font-size: 20px;
-    padding-top: 70px;
-    overflow-x: hidden;
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-image: url('gym-composition-with-sport-elements.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 20px;
+  padding-top: 70px;
+  overflow-x: hidden;
 }
-h1{
+
+h1 {
   font-size: 2.5em;
   margin-left: 100px;
 }
-h2{
+
+h2 {
   font-size: 2.5em;
   margin-left: 100px;
   margin-bottom: 20px;
-  }
-nav{
-    display:flex;
-    justify-content: space-between;
-    scroll-behavior: smooth;
-    background-color: rgb(53, 38, 38);
-    padding: 10px 20px;
-    color: white;
-    position: static;
-    top: 0;
-    z-index: 1000;
-    font-weight: bolder;
-    position: fixed;
-    width: 100%;
 }
 
-nav .logo{
-    color: white;
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(53, 38, 38);
+  padding: 10px 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  font-weight: bolder;
+  width: 100%;
+}
+.home-text{
+  margin-left: 100px;
+}
+.about-text{
+  margin-left: 100px;
+}
+
+nav .logo {
+  color: white;
   font-size: 50px;
   text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: left;
+  color: white;
+  width: 45vw;
+}
+
+#search {
+  width: 90vw;
+  border-radius: 20px;
+  border: white;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 100px;
+  max-width: 1000px;
+}
+
+.clear-button {
+  border-radius: 30px;
+  font-size: 20px;
+  border: white;
+  cursor: pointer;
+}
+
+#products {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+#product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  color: black;
+  width: 90vw;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+.card p {
+  color: #444;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+      padding-top: 90px; 
+      background-attachment: scroll; 
   }
 
-  .about-text{
-    font-size: 20px;
-    font-style: bold;
-    margin-left: 100px;
+  h1, h2 {
+      font-size: 1.8em;
+      margin-left: 20px;
   }
-  .home-text{
-    font-size: 20px;
-    font-style: bold;
-    margin-left: 100px;
+
+  section {
+      width: 90vw; 
+  }
+
+  #search {
+      width: 80vw;
+      margin-left: 10px;
+  }
+
+  #product-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+      padding: 15px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 15px;
   }
 
   nav ul li a {
-    color: white;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 40px;
+      margin-left: 0;
+      margin-right: 0;
   }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  section {
-    padding: 40px 20px;
-    text-align:left;
-    color: white;
-    width: 45vw;
-  }
-  
-  #search {
-    width: 90vw;
-    border-radius: 20px;
-    border: white;
-    margin: 20px 0;
-    padding: 10px;
-    font-size: 16px;
-    margin-left: 100px;
-    max-width: 1000px;
-  }
-  .clear-button{
-    border-radius: 30px;
-    font-size: 20px;
-    border: white;
-    cursor: pointer;
-  }
-  #products{
-    width: 100%;
-    padding: 40px 20px;
-  }
-  
-  #product-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    padding: 20px;
-    color: black;
-    width: 90vw;
-  }
-  
-  .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    overflow: hidden;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .card img {
-    max-width: 100%;
-    height: 150px;
-    object-fit: contain;
-  }
-  
-  .card h2 {
-    font-size: 1.1rem;
-    margin: 15px 0;
-  }
-  
-  .card p {
-    color: #444;
-    font-weight: bolder;
-    font-size: 20px;
+
+  .logo {
+      font-size: 40px;
   }
 }
